@@ -1,0 +1,173 @@
+/* the reset selector*/
+*{margin:0; padding: 0;}
+
+header,footer,article,section,nav,figure{
+/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 900px;
+    margin: 0 auto;
+    border: 3px solid #080808;
+    background-color: #A9A9A9;
+}
+
+a:focus, a:hover {font-style: italic; color:green;}
+
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #A9A9A9;
+		background-image: -moz-linear-gradient(
+	    30deg, #A9A9A9 0%,#A9A9A9 30%, white 50%, #A9A9A9 80%, #A9A9A9 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #A9A9A9 0%,#A9A9A9 30%, white 50%, #A9A9A9 80%, #A9A9A9 100%);
+	background-image: -o-linear-gradient(
+	    30deg,#A9A9A9 0%, #A9A9A9 30%, white 50%, #A9A9A9 80%, #A9A9A9 100%);
+	background-image: linear-gradient(
+	    30deg,#A9A9A9 0%, #A9A9A9 30%, white 50%, #A9A9A9 80%, #A9A9A9 100%);
+}
+ header h1{
+	/* The logo text */
+	font-size:3em;
+	padding-right:2px;
+	text-transform:uppercase;
+}
+header h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;	
+}
+header img {float: left;  border:1px solid black;}
+
+/*article*/
+article h2{
+	font-size: 120%;
+	padding-bottom:.5em;
+}
+#sidebar h2{
+	font-size: 120%;
+	padding-bottom:.5em;
+}
+
+/* the styles for the navigation menu */
+/* removes bullet*/
+nav {    
+  display: block;
+  text-align: center;
+   
+}
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+ 
+}
+.margin li {margin-top: -5px;}
+.nav a {
+  display:block; 
+  background: #111; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-shadow: 0 -1px 0 #000;
+  width:252.5px;
+}
+
+
+.nav{  
+  vertical-align: top; 
+  display: inline-block;
+  box-shadow: 
+    1px -1px -1px 1px #000, 
+    -1px 1px -1px 1px #fff, 
+    0 0 6px 3px #fff;
+  border-radius:6px;
+}
+.nav li {
+  position: relative;
+}
+.nav > li { 
+  float: left;   
+  margin-right: 1px; 
+} 
+.nav > li:hover, 
+.nav > li:hover > a { 
+  border-bottom-color: orange;
+}
+
+/* submenu positioning*/
+.nav ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid  orange;
+  z-index: 1;
+  left: -99999em;
+}
+.nav > li:hover > ul {
+  left: auto;
+  margin-top: 5px;
+  min-width: 100%;
+}
+.nav > li li:hover > ul { 
+  left: 100%;
+  margin-left: 1px;
+  top: -1px;
+}
+/*grid*/
+.container{
+display:grid;
+grid-template-columns: 3fr 4fr 3fr;
+}
+nav{background:#696969; }
+main{background:#d1d1d1;}
+#sidebar{background:#e7d4c7;}
+   
+.logo
+{
+border: 5px solid black;
+padding: 5px;
+border-radius: 4px;
+
+
+}
+.logo:hover{
+box-shadow: 0 0 2px 1px rgb(255,199,227) ;
+color:#ff8ac4;
+top:-5px;
+left:-10px;
+right:-2px;
+width:200px;
+height:auto;
+display:block;
+z-index:999;
+}
+figure { 
+float: left; 
+margin-right: 1.5em;
+padding-bottom:1em; 
+padding-top:0.5em} 
+figcaption { 
+display: block; 
+font-weight: bold; 
+padding-top: .25em; 
+margin-bottom: lem; 
+border-bottom: 3px solid white; }
+/* the styles for the footer */
+footer {
+	background-color: black;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
